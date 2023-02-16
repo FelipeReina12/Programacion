@@ -1,0 +1,27 @@
+from math import sqrt as raizc
+y = 56
+raiz =raizc(y)
+print(raiz)
+
+
+#Variables
+numero_1 = 12.5
+print(type(numero_1))
+
+nuemero_2 = 21
+print(type(nuemero_2))
+
+string = "Hola mundo"
+print(type(string))
+
+booleans = True
+print(type(booleans))
+
+a = int(input('Ingrese el valor de a: '))
+b = int(input('Ingrese el valor de b: '))
+c = int(input('Ingrese el valor de c: '))
+
+x1 = (-b + raizc((b**2)-4*a*c))/(2*a)
+x2 = (-b - raizc((b**2)-4*a*c))/(2*a)
+print('El valoer de x1 es: ', x1)
+print('El valor de x2 es: ', x2)
