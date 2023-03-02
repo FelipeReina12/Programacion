@@ -2,12 +2,19 @@ def suma(a, b):
     result = a + b
     return result
 
+def imprimir():
+    print('Su resultado es: ')
+
+
 n = 'si'
 while n == 'si':
 
-    a = int(input('Ingrese un nuero: '))
+    a = int(input('Ingrese un numero: '))
     b = int(input('Ingrese un numero: '))
     res = suma(a, b)
+    imprimir()
     print(res)
 
-    n = input('Quiere sumar otros numeros?: (si/no ')
+    n = input('Quiere sumar otros numeros?: (si/no) ')
+
+
