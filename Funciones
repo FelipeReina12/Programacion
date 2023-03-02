@@ -2,17 +2,17 @@ def suma(a, b):
     result = a + b
     return result
 
-def imprimir():
-    print('Su resultado es: ')
+def imprimir(nombre):
+    print(nombre,'Su resultado es: ')
 
 
 n = 'si'
 while n == 'si':
-
+    nombre = input('Ingrese su nombre: ')
     a = int(input('Ingrese un numero: '))
     b = int(input('Ingrese un numero: '))
     res = suma(a, b)
-    imprimir()
+    imprimir(nombre)
     print(res)
 
     n = input('Quiere sumar otros numeros?: (si/no) ')
