@@ -1,0 +1,14 @@
+def circulo(pi, r):
+    result = pi * (r ** 2)
+    return result
+pi = 3.1416
+r = int(input('Ingrese el radio: '))
+h = int(input('Ingrese la altura: '))
+area = (circulo(pi, r))
+print('El area del circulo es: ',area)
+
+def volumen(area, h):
+    resultado = area * h
+    return resultado
+vol = (volumen(area, h))
+print('El volumen del circulo es: ', vol)
