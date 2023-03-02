@@ -10,4 +10,4 @@ while n == 'si':
     res = suma(a, b)
     print(res)
 
-    n = input('Quiere sumar otro numero?: (si/no ')
+    n = input('Quiere sumar otros numeros?: (si/no ')
