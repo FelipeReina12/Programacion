@@ -1,0 +1,13 @@
+def suma(a, b):
+    result = a + b
+    return result
+
+n = 'si'
+while n == 'si':
+
+    a = int(input('Ingrese un nuero: '))
+    b = int(input('Ingrese un numero: '))
+    res = suma(a, b)
+    print(res)
+
+    n = input('Quiere sumar otro numero?: (si/no ')
