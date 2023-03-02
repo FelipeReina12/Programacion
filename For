@@ -1,0 +1,14 @@
+print('Escoja una de las siguientes opciones: \n for i in range(final) \n for i in range (Inicio, final) \n for i in range (Inicio, final, Paso)')
+opcion = int(input('Escoja una opcion: '))
+
+if opcion == 1:
+    for i in range(10):
+        print(i + 1)
+    print('Fin del proceso')
+
+elif opcion == 2:
+    pass
+if opcion == 1:
+    for i in range(1, 10):
+        print(i + 1)
+    print('Fin del proceso')
