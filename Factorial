@@ -1,0 +1,9 @@
+def factorial(n):
+    if n == 0:
+        return 1
+    else:
+        return n * factorial(n-1)
+n = int(input('Ingrese el total de elementos: (n)'))
+r = int(input('Ingrese el total de muestras sin orden: (r)'))
+comb = factorial(n) / (factorial(r) * factorial(n-r))
+print('El numero de combnaciones binomiales es: ', comb )
