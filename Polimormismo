@@ -1,0 +1,111 @@
+class Ciudadano:
+    def __init__(self):
+        self.__nombre = None
+        self.__idioma = None
+
+#---------GETTERS----------#
+    def getNombre(self):
+        return self.__nombre
+
+    def getIdioma(self):
+        return self.__idioma
+
+    #--------SETTERS---------#
+    def setNombre(self,nombre: str):
+        self.__nombre = nombre
+
+    def setIdioma(self,idioma: str):
+        self.__idioma = idioma
+
+    #-----------SOBRECARGA----------#
+    def saludo(self):
+        return 'Quoi de beau!'
+
+class Colombia(Ciudadano):
+    def __init__(self):
+        super().__init__()
+        self.__cc = None
+    
+    def getCc(self):
+        return self.__cc
+    
+    def setCc(self, cc: int):
+        self.__cc = cc
+    
+    #-----------SOBRECARGA----------#
+    def saludo(self):
+        return 'Quiubo Parce'
+
+class Inglaterra(Ciudadano):
+    def __init__(self):
+        super().__init__()
+        self.__id = None
+    
+    
+    def setId(self, id: int):
+        self.__id = id
+
+    def getId(self):
+        return self.__id
+
+    #-----------SOBRECARGA----------#
+    def saludo(self):
+        return 'Hi'
+
+class China(Ciudadano):
+    def __init__(self):
+        super().__init__()
+        self.__sh = None
+    
+    def getSh(self):
+        return self.__sh
+    
+    def setSh(self, sh: int):
+        self.__sh = sh
+
+    #-----------SOBRECARGA----------#
+    def saludo(self):
+        return 'Nigamaya'
+    
+
+def darSaludo(obj):
+    return obj.saludo()
+
+def main():
+    colombiano = Colombia()
+    colombiano.setNombre('Kevin')
+    colombiano.setIdioma('Español')
+    colombiano.setCc(1007688937)
+
+    ingles = Inglaterra()
+    ingles.setNombre('James')
+    ingles.setIdioma('Ingles')
+    ingles.setId(656548948)
+
+    chino = China()
+    chino.setNombre('liu')
+    chino.setIdioma('Chino mandarin')
+    chino.setSh(4849849489)
+
+    ciudadana = Ciudadano()
+    ciudadana.setNombre('carla')
+    ciudadana.setIdioma('Frances')
+
+    print(f'Aplicante: {colombiano.getNombre()}\n\
+          Su idioma: {colombiano.getIdioma()}\n\
+          Su documento de identificacion: {colombiano.getCc()}\n\
+          darSaludo{colombiano}\n')
+    
+    print(f'Aplicante: {ingles.getNombre()}\n\
+          Su idioma: {ingles.getIdioma()}\n\
+          Su documento de identificacion: {ingles.getId()}\n\
+          darSaludo{ingles}\n')
+
+    print(f'Aplicante: {chino.getNombre()}\n\
+            Su idioma: {chino.getIdioma()}\n\
+            Su documento de identificacion: {chino.getSh()}\n\
+            darSaludo{chino}')
+
+
+if __name__ == '__main__':
+    main()
